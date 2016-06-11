@@ -1,0 +1,70 @@
+﻿<Page x:Class="Vechicle_Database.MotorcyclesAdd"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Vechicle_Database"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="MotorcyclesAdd">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height=" 1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="10,10,10,10">
+            <StackPanel>
+                <Label Content="Manufacturer:"/>
+                <TextBox Name="ManufacturerTextBox" LostFocus="ManufacturerTextBox_LostFocus"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Model:"/>
+                <TextBox Name="ModelTextBox" LostFocus="ModelTextBox_LostFocus"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Year:"/>
+                <TextBox Name="YearTextBox" LostFocus="YearTextBox_LostFocus"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="10,10,10,10">
+            <StackPanel>
+                <Label Content="Kilometerage:"/>
+                <TextBox Name="KilometerageTextBox" LostFocus="KilometerageTextBox_LostFocus"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Engine:"/>
+                <TextBox Name="Engine" LostFocus="Engine_LostFocus"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Color:"/>
+                <TextBox Name="ColorTextBox" LostFocus="ColorTextBox_LostFocus"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="0" Margin="10,10,10,10">
+            <StackPanel>
+                <Label Content="Fuel:"/>
+                <TextBox Name="FuelTextBox" LostFocus="FuelTextBox_LostFocus"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Burn Rate:"/>
+                <TextBox Name="BurnRateTextBox" LostFocus="BurnRateTextBox_LostFocus"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Type:"/>
+                <ComboBox Name="MotorcycleType"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1">
+            <Button Name="Add" Content="Add" Margin="0,10,10,0" Click="Add_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Button Name="Cancel" Content="Cancel" Margin="0,10,10,0" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
