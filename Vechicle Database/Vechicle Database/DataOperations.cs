@@ -89,6 +89,7 @@ namespace Vechicle_Database
         }
         private static void LoadCars()
         {
+            MainWindow.CarsList.Clear();
             try
             {
                 StreamReader Reader = new StreamReader("Cars.svdb");
@@ -120,6 +121,7 @@ namespace Vechicle_Database
         }
         private static void LoadMotorcycles()
         {
+            MainWindow.MotorcyclesList.Clear();
             try
             {
                 StreamReader Reader = new StreamReader("Motorcycles.svdb");
@@ -153,6 +155,7 @@ namespace Vechicle_Database
         }
         private static void LoadTrucks()
         {
+            MainWindow.TrucksList.Clear();
             try
             {
                 StreamReader Reader = new StreamReader("Trucks.svdb");

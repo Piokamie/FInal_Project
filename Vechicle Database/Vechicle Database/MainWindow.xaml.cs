@@ -126,11 +126,13 @@ namespace Vechicle_Database
             DataOperations.Save(CarsList);
             DataOperations.Save(MotorcyclesList);
             DataOperations.Save(TrucksList);
+            MessageBox.Show("Data successfully saved.", "Simple Vehicle Database");
         }
 
         private void LoadButton_Click(object sender, RoutedEventArgs e)
         {
             DataOperations.Load();
+            MessageBox.Show("Data successfully loaded.", "Simple Vehicle Database");
         }
     }
 }
